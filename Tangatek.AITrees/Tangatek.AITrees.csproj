@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C529C145-3571-4DFD-A62D-80150A43FC33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tangatek.AITrees</RootNamespace>
+    <AssemblyName>Tangatek.AITrees</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\AddCanopyMenu.cs" />
+    <Compile Include="Attributes\Description.cs" />
+    <Compile Include="Attributes\Icon.cs" />
+    <Compile Include="Attributes\OnlyTree.cs" />
+    <Compile Include="Canopy\Branch\Branch.cs" />
+    <Compile Include="Canopy\Branch\DedicatedBranch.cs" />
+    <Compile Include="Canopy\Canopy.cs" />
+    <Compile Include="Canopy\Leaf\Action.cs" />
+    <Compile Include="Canopy\Leaf\Condition.cs" />
+    <Compile Include="Canopy\Leaf\Leaf.cs" />
+    <Compile Include="Canopy\Limb\Decorator.cs" />
+    <Compile Include="Canopy\Limb\Limb.cs" />
+    <Compile Include="Canopy\Node\Node.cs" />
+    <Compile Include="Canopy\Node\SerializedNode.cs" />
+    <Compile Include="Enums\State.cs" />
+    <Compile Include="Interfaces\NamedObject.cs" />
+    <Compile Include="Json\IJsonWrapper.cs" />
+    <Compile Include="Json\JsonData.cs" />
+    <Compile Include="Json\JsonException.cs" />
+    <Compile Include="Json\JsonMapper.cs" />
+    <Compile Include="Json\JsonReader.cs" />
+    <Compile Include="Json\JsonWriter.cs" />
+    <Compile Include="Json\Lexer.cs" />
+    <Compile Include="Json\ParserToken.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trees\AITree.cs" />
+    <Compile Include="Canopy\SerializedCanopy.cs" />
+    <Compile Include="Utilities\UnityReference.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

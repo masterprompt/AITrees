@@ -1,0 +1,5 @@
+Z:\Documents\C#\Tangatek\AITrees\Tangatek.AITrees\bin\Debug\Tangatek.AITrees.dll
+Z:\Documents\C#\Tangatek\AITrees\Tangatek.AITrees\bin\Debug\Tangatek.AITrees.pdb
+Z:\Documents\C#\Tangatek\AITrees\Tangatek.AITrees\obj\Debug\ResolveAssemblyReference.cache
+Z:\Documents\C#\Tangatek\AITrees\Tangatek.AITrees\obj\Debug\Tangatek.AITrees.dll
+Z:\Documents\C#\Tangatek\AITrees\Tangatek.AITrees\obj\Debug\Tangatek.AITrees.pdb
